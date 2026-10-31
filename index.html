@@ -44,10 +44,6 @@
             backdrop-filter: blur(12px);
             border: 1px solid rgba(226, 232, 240, 0.8);
         }
-        .dark .glass-card {
-            background: rgba(15, 23, 42, 0.85);
-            border: 1px solid rgba(51, 65, 85, 0.5);
-        }
         .gradient-text {
             background: linear-gradient(135deg, #0284c7 0%, #7c3aed 100%);
             -webkit-background-clip: text;
@@ -111,7 +107,6 @@
     <main class="pt-20">
         <!-- HERO SECTION -->
         <section id="hero" class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-slate-100/70 to-slate-50">
-            <!-- Background Decorative Orbs -->
             <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
             <div class="absolute top-1/3 right-10 w-72 h-72 bg-accent-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -168,16 +163,15 @@
                     <!-- Right Profile Visual Card -->
                     <div class="lg:col-span-5 flex justify-center">
                         <div class="relative w-full max-w-sm">
-                            <!-- Background Accent Backdrop -->
                             <div class="absolute inset-0 gradient-bg rounded-3xl transform rotate-3 scale-105 opacity-20 blur-md"></div>
                             
                             <div class="relative bg-white border border-slate-200/80 rounded-3xl p-6 shadow-xl">
                                 <div class="relative aspect-square rounded-2xl overflow-hidden mb-6 bg-slate-100 group">
-                                    <!-- Profile Image -->
-                                    <img src="https://placehold.co/400x400/0ea5e9/ffffff?text=Merry+Ann+Ignacio" 
+                                    <!-- Profile Image linked to profile.jpg -->
+                                    <img src="profile.jpg" 
                                          alt="Merry Ann V. Ignacio" 
                                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                         onerror="this.src='https://placehold.co/400x400/0284c7/ffffff?text=Merry+Ann+Ignacio'">
+                                         onerror="this.src='https://placehold.co/400x400/0ea5e9/ffffff?text=Merry+Ann+Ignacio'">
                                     
                                     <div class="absolute bottom-3 left-3 right-3 glass-card p-3 rounded-xl shadow-lg border border-white/40 flex items-center justify-between">
                                         <div>
@@ -227,7 +221,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all hover:shadow-lg">
                         <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl mb-4">
-                            <i class="fa-solid fa-comments text-brand-600"></i>
+                            <i class="fa-solid fa-comments"></i>
                         </div>
                         <h4 class="font-bold text-slate-900 text-lg mb-2">Live Chat Excellence</h4>
                         <p class="text-sm text-slate-600 leading-relaxed">
@@ -443,23 +437,23 @@
 
                                 <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
                                     <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Image Annotation</span>
-                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Geospatial Mapping</span>
-                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">AI Datasets</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Map Labeling</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Data Categorization</span>
                                     <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Transcription</span>
                                 </div>
                             </div>
 
-                            <div class="lg:col-span-4 bg-slate-800 text-white p-6 sm:p-8 flex flex-col justify-center gap-6">
-                                <h5 class="text-xs font-bold tracking-widest text-amber-400 uppercase">Track Record</h5>
+                            <div class="lg:col-span-4 bg-amber-950 text-white p-6 sm:p-8 flex flex-col justify-center gap-6">
+                                <h5 class="text-xs font-bold tracking-widest text-amber-300 uppercase">Operations Benchmark</h5>
                                 
                                 <div class="space-y-4">
-                                    <div class="border-b border-slate-700 pb-3">
-                                        <div class="text-3xl font-extrabold text-amber-400 mb-1">6+ Years</div>
-                                        <div class="text-xs text-slate-300">Combined Data Annotation Experience</div>
+                                    <div class="border-b border-amber-900 pb-3">
+                                        <div class="text-3xl font-extrabold text-white mb-1">7 Years</div>
+                                        <div class="text-xs text-amber-300">Continuous Freelance Data Contribution</div>
                                     </div>
                                     <div>
-                                        <div class="text-3xl font-extrabold text-white mb-1">High Accuracy</div>
-                                        <div class="text-xs text-slate-300">Consistent Guideline Compliance</div>
+                                        <div class="text-3xl font-extrabold text-amber-300 mb-1">High Accuracy</div>
+                                        <div class="text-xs text-amber-300">Consistent Dataset Quality Score</div>
                                     </div>
                                 </div>
                             </div>
@@ -469,356 +463,175 @@
             </div>
         </section>
 
-        <!-- INTERACTIVE SKILLS MATRIX SECTION -->
-        <section id="skills" class="py-20 bg-white">
+        <!-- SKILL MATRIX -->
+        <section id="skills" class="py-20 bg-white border-t border-slate-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-10">
-                    <h2 class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-2">Core Competencies</h2>
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-2">Capabilities</h2>
                     <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
-                        Interactive Skills Matrix
+                        Comprehensive Skill Matrix
                     </h3>
-                    <p class="mt-3 text-slate-600 text-sm sm:text-base">
-                        Filter by domain to explore specific technical and operational skillsets.
+                    <p class="mt-4 text-base text-slate-600">
+                        Divided across customer support expertise, data operations, and essential remote workplace tools.
                     </p>
                 </div>
 
-                <!-- Skill Filters -->
-                <div class="flex flex-wrap justify-center gap-2 mb-10">
-                    <button onclick="filterSkills('all')" class="skill-filter-btn active px-4 py-2 rounded-full text-xs font-bold transition-all bg-slate-900 text-white shadow-md" data-filter="all">
-                        All Skills
-                    </button>
-                    <button onclick="filterSkills('customer')" class="skill-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all" data-filter="customer">
-                        <i class="fa-solid fa-headset mr-1"></i> Customer Care
-                    </button>
-                    <button onclick="filterSkills('data')" class="skill-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all" data-filter="data">
-                        <i class="fa-solid fa-database mr-1"></i> Data & AI Operations
-                    </button>
-                    <button onclick="filterSkills('tools')" class="skill-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all" data-filter="tools">
-                        <i class="fa-solid fa-wrench mr-1"></i> Tools & Software
-                    </button>
-                </div>
-
-                <!-- Skills Grid Container -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="skills-grid">
-
-                    <!-- Skill 1 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="customer">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">Live Chat Support</h4>
-                            <span class="text-xs bg-brand-100 text-brand-700 px-2.5 py-0.5 rounded-full font-bold">Expert</span>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Column 1 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8">
+                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-headset"></i>
                         </div>
-                        <p class="text-xs text-slate-500 mb-3">Real-time chat management, rapid multi-tab response, and professional etiquette.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-brand-600 h-1.5 rounded-full" style="width: 95%"></div>
-                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-4">Customer Care & Support</h4>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Customer Service & Live Chat Support</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Customer Inquiry Handling</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Issue Resolution & Escalation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Payment & Transaction Support</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Clear Written Communication</li>
+                        </ul>
                     </div>
 
-                    <!-- Skill 2 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="customer">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">Payment & Receipt Verification</h4>
-                            <span class="text-xs bg-emerald-100 text-emerald-700 px-2.5 py-0.5 rounded-full font-bold">Advanced</span>
+                    <!-- Column 2 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8">
+                        <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-database"></i>
                         </div>
-                        <p class="text-xs text-slate-500 mb-3">Reviewing financial transactions, deposit receipts, and account validation proof.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-emerald-600 h-1.5 rounded-full" style="width: 90%"></div>
-                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-4">Data & Visual Operations</h4>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Document & Receipt Review</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Customer Record Management</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Retail Product Image Sourcing</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Data Entry & Accuracy Verification</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Image Annotation & Map Labeling</li>
+                        </ul>
                     </div>
 
-                    <!-- Skill 3 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="customer">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">Issue Resolution & Escalation</h4>
-                            <span class="text-xs bg-brand-100 text-brand-700 px-2.5 py-0.5 rounded-full font-bold">Expert</span>
+                    <!-- Column 3 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-toolbox"></i>
                         </div>
-                        <p class="text-xs text-slate-500 mb-3">Routing complex cases to tier-2 teams and maintaining cross-team follow-up logs.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-brand-600 h-1.5 rounded-full" style="width: 92%"></div>
-                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-4">Tools & Strengths</h4>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> MS Office Suite</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Canva Graphic Tools</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Remote Team Collaboration</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Time Management & Adaptability</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Independent Problem Solving</li>
+                        </ul>
                     </div>
-
-                    <!-- Skill 4 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="data">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">Image Annotation & Map Labeling</h4>
-                            <span class="text-xs bg-amber-100 text-amber-700 px-2.5 py-0.5 rounded-full font-bold">Expert</span>
-                        </div>
-                        <p class="text-xs text-slate-500 mb-3">Bounding box creation, geospatial mapping, and computer vision dataset tagging.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-amber-600 h-1.5 rounded-full" style="width: 95%"></div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 5 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="data">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">E-Commerce Product Sourcing</h4>
-                            <span class="text-xs bg-purple-100 text-purple-700 px-2.5 py-0.5 rounded-full font-bold">Advanced</span>
-                        </div>
-                        <p class="text-xs text-slate-500 mb-3">Finding, validating, and curating retail product images compliant with catalog specs.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-purple-600 h-1.5 rounded-full" style="width: 88%"></div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 6 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="data">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">Data Entry & Transcription</h4>
-                            <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-0.5 rounded-full font-bold">Advanced</span>
-                        </div>
-                        <p class="text-xs text-slate-500 mb-3">High-speed data transcription and accurate record keeping with strong consistency.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-slate-700 h-1.5 rounded-full" style="width: 94%"></div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 7 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="tools">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">Microsoft Office Suite</h4>
-                            <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-0.5 rounded-full font-bold">Proficient</span>
-                        </div>
-                        <p class="text-xs text-slate-500 mb-3">Word, Excel, PowerPoint for reporting, data logging, and documentation.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-slate-700 h-1.5 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 8 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="tools">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">Canva Visual Design</h4>
-                            <span class="text-xs bg-pink-100 text-pink-700 px-2.5 py-0.5 rounded-full font-bold">Proficient</span>
-                        </div>
-                        <p class="text-xs text-slate-500 mb-3">Quick visual editing, graphic social media material, and layout formatting.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-pink-600 h-1.5 rounded-full" style="width: 80%"></div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 9 -->
-                    <div class="skill-card p-5 rounded-2xl bg-slate-50 border border-slate-200" data-category="tools">
-                        <div class="flex items-center justify-between mb-3">
-                            <h4 class="font-bold text-slate-800">Remote Workspace Apps</h4>
-                            <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-0.5 rounded-full font-bold">Proficient</span>
-                        </div>
-                        <p class="text-xs text-slate-500 mb-3">Slack, Google Workspace, ticketing platforms, and collaborative tools.</p>
-                        <div class="w-full bg-slate-200 rounded-full h-1.5">
-                            <div class="bg-slate-700 h-1.5 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- EDUCATION & TECHNICAL BACKGROUND -->
+        <!-- BACKGROUND & EDUCATION -->
         <section id="education" class="py-20 bg-slate-100/60 border-t border-slate-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                    
-                    <!-- Left: Educational Credentials -->
-                    <div class="lg:col-span-6 space-y-6">
-                        <div>
-                            <h2 class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-2">Education & Foundation</h2>
-                            <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Academic Background</h3>
-                        </div>
-
-                        <div class="space-y-6">
-                            <!-- Card 1 -->
-                            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm relative pl-8">
-                                <div class="absolute left-0 top-0 bottom-0 w-2 gradient-bg rounded-l-2xl"></div>
-                                <span class="px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 text-xs font-bold inline-block mb-2">2016 – 2018</span>
-                                <h4 class="text-lg font-bold text-slate-900">Asian Institute of Computer Studies</h4>
-                                <p class="text-sm font-semibold text-brand-600 mb-2">Senior High School • TVL - ICT Strand</p>
-                                <p class="text-xs text-slate-500 leading-relaxed">
-                                    Focused on Technical-Vocational-Livelihood Information and Communications Technology (ICT), building core competencies in computer fundamentals, data processing, and digital operations.
-                                </p>
-                            </div>
-
-                            <!-- Card 2 -->
-                            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm relative pl-8">
-                                <div class="absolute left-0 top-0 bottom-0 w-2 bg-slate-300 rounded-l-2xl"></div>
-                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-bold inline-block mb-2">Completed 2016</span>
-                                <h4 class="text-lg font-bold text-slate-900">Paliparan National High School</h4>
-                                <p class="text-sm text-slate-500">Junior High School Diploma</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right: Strengths & Soft Skills -->
-                    <div class="lg:col-span-6 space-y-6">
-                        <div>
-                            <h2 class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-2">Personal Attributes</h2>
-                            <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Additional Strengths</h3>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-slate-900 text-sm">Strong Attention to Detail</h5>
-                                    <p class="text-xs text-slate-500 mt-1">High accuracy in data entry, proof checking, and document audits.</p>
-                                </div>
-                            </div>
-
-                            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
-                                    <i class="fa-solid fa-puzzle-piece"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-slate-900 text-sm">Problem Solving</h5>
-                                    <p class="text-xs text-slate-500 mt-1">Resourceful in managing complex customer tickets and escalations.</p>
-                                </div>
-                            </div>
-
-                            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
-                                    <i class="fa-solid fa-clock"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-slate-900 text-sm">Time Management</h5>
-                                    <p class="text-xs text-slate-500 mt-1">Ability to prioritize urgent live chat requests while maintaining steady output.</p>
-                                </div>
-                            </div>
-
-                            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0">
-                                    <i class="fa-solid fa-wifi"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-slate-900 text-sm">Remote Collaboration</h5>
-                                    <p class="text-xs text-slate-500 mt-1">Self-motivated with reliable internet connectivity and dedicated workspace.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Work Ethics Banner -->
-                        <div class="p-6 rounded-2xl gradient-bg text-white shadow-lg">
-                            <p class="text-xs uppercase font-bold tracking-wider text-brand-100 mb-1">Commitment Statement</p>
-                            <blockquote class="text-sm sm:text-base font-medium italic">
-                                "Dedicated to serving remote teams with consistency, accountability, and clear written communication to keep customer support operations smooth."
-                            </blockquote>
-                        </div>
-                    </div>
-
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-2">Qualifications</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
+                        Education & Technical Background
+                    </h3>
                 </div>
-            </div>
-        </section>
 
-        <!-- CONTACT & INQUIRY SECTION -->
-        <section id="contact" class="py-20 bg-slate-900 text-white relative overflow-hidden">
-            <!-- Background Glow -->
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
-
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                    
-                    <!-- Contact Details Left -->
-                    <div class="lg:col-span-5 space-y-8">
-                        <div>
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-brand-500/20 text-brand-300 border border-brand-500/30">Get In Touch</span>
-                            <h3 class="text-3xl sm:text-4xl font-extrabold mt-3 tracking-tight">Let's Work Together</h3>
-                            <p class="text-slate-400 mt-3 text-sm sm:text-base">
-                                Open for full-time, part-time, or contract Virtual Assistant, Customer Support, and Data Annotation roles.
-                            </p>
+                <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center mb-4 font-bold">
+                            <i class="fa-solid fa-graduation-cap"></i>
                         </div>
-
-                        <div class="space-y-4">
-                            <!-- Email -->
-                            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-between">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center">
-                                        <i class="fa-solid fa-envelope"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-xs text-slate-400">Direct Email</p>
-                                        <p class="text-sm font-semibold text-white">virgomerryann@gmail.com</p>
-                                    </div>
-                                </div>
-                                <button onclick="copyToClipboard('virgomerryann@gmail.com', 'Email copied!')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-brand-600 text-xs font-semibold transition-colors">
-                                    Copy
-                                </button>
-                            </div>
-
-                            <!-- Phone -->
-                            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-between">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-xs text-slate-400">Phone Number</p>
-                                        <p class="text-sm font-semibold text-white">+63 945 100 3106</p>
-                                    </div>
-                                </div>
-                                <button onclick="copyToClipboard('+639451003106', 'Phone number copied!')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-emerald-600 text-xs font-semibold transition-colors">
-                                    Copy
-                                </button>
-                            </div>
-
-                            <!-- Location -->
-                            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400">Location</p>
-                                    <p class="text-sm font-semibold text-white">262 V. Antonio St., Sineguelasan, Bacoor, Cavite 4102, PH</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Reference note -->
-                        <p class="text-xs text-slate-500 italic">
-                            * Professional references are available upon request.
+                        <h4 class="text-lg font-bold text-slate-900 mb-1">Senior High School</h4>
+                        <p class="text-brand-600 font-semibold text-sm mb-2">Asian Institute of Computer Studies</p>
+                        <p class="text-xs text-slate-500 font-medium mb-3">TVL-ICT Strand • 2016 – 2018</p>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Built a strong foundation in information and communications technology, setting the stage for digital operations and remote work.
                         </p>
                     </div>
 
-                    <!-- Contact Form Right -->
-                    <div class="lg:col-span-7">
-                        <div class="bg-slate-800/90 border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-2xl">
-                            <h4 class="text-xl font-bold mb-2">Send an Inquiry</h4>
-                            <p class="text-slate-400 text-xs sm:text-sm mb-6">Fill out this quick form to discuss your project or job opening.</p>
-
-                            <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    <div>
-                                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Your Name</label>
-                                        <input type="text" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
-                                    </div>
-                                    <div>
-                                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Your Email</label>
-                                        <input type="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Role / Project Type</label>
-                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white focus:outline-none focus:border-brand-500 text-sm">
-                                        <option>Virtual Assistant Support</option>
-                                        <option>Customer Live Chat Support</option>
-                                        <option>E-Commerce Image Sourcing</option>
-                                        <option>Data / Map Annotation</option>
-                                        <option>Other Operational Role</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Message</label>
-                                    <textarea rows="4" required placeholder="Describe your requirements or job details..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm"></textarea>
-                                </div>
-
-                                <button type="submit" class="w-full py-3.5 rounded-xl font-semibold text-white gradient-bg hover:opacity-95 transition-all shadow-lg text-sm flex items-center justify-center gap-2">
-                                    <i class="fa-solid fa-paper-plane text-xs"></i> Send Inquiry
-                                </button>
-                            </form>
-
-                            <div id="form-message" class="hidden mt-4 p-4 rounded-xl text-center text-sm font-semibold"></div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4 font-bold">
+                            <i class="fa-solid fa-school"></i>
                         </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-1">Junior High School</h4>
+                        <p class="text-emerald-700 font-semibold text-sm mb-2">Paliparan National High School</p>
+                        <p class="text-xs text-slate-500 font-medium mb-3">Completed 2016</p>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Completed foundational secondary education in Cavite with strong focus on discipline, communication, and academic excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0ea5e9_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 space-y-6">
+                        <h2 class="text-xs font-bold tracking-widest text-brand-400 uppercase">Get In Touch</h2>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                            Ready to Collaborate or Hire? Let's Connect.
+                        </h3>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            Whether you need a reliable virtual assistant, customer support live-chat specialist, or a data annotation expert, I am ready to bring dedication and accuracy to your team.
+                        </p>
+
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-brand-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Email Address</p>
+                                    <a href="mailto:virgomerryann@gmail.com" class="text-white font-bold hover:text-brand-400 transition-colors">virgomerryann@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-emerald-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Phone / WhatsApp</p>
+                                    <a href="tel:+639451003106" class="text-white font-bold hover:text-emerald-400 transition-colors">(+63) 945 100 3106</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-purple-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Location</p>
+                                    <p class="text-white font-bold">Bacoor, Cavite, Philippines 4102</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 bg-slate-800 border border-slate-700 p-8 rounded-3xl shadow-2xl">
+                        <h4 class="text-xl font-bold text-white mb-6">Send a Direct Inquiry</h4>
+                        
+                        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name / Company</label>
+                                <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Email Address</label>
+                                <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500" placeholder="name@company.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Message or Project Inquiry</label>
+                                <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500" placeholder="Describe your project or role..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 rounded-xl font-semibold text-white gradient-bg hover:opacity-95 shadow-lg shadow-brand-500/20 transition-all">
+                                Send Message
+                            </button>
+                        </form>
                     </div>
 
                 </div>
@@ -826,113 +639,64 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p class="text-xs">
-                © 2026 Merry Ann V. Ignacio. All rights reserved.
-            </p>
-            <div class="flex items-center gap-4 text-xs">
-                <a href="#hero" class="hover:text-slate-300 transition-colors">Back to Top <i class="fa-solid fa-arrow-up ml-1"></i></a>
-            </div>
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-900 text-center text-xs">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Merry Ann V. Ignacio. All rights reserved.</p>
+            <p>Virtual Assistant & Data Specialist Portfolio</p>
         </div>
     </footer>
 
-    <!-- Toast Notification Container -->
-    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-slate-700 text-sm font-semibold">
-        <i class="fa-solid fa-circle-check text-emerald-400" id="toast-icon"></i>
-        <span id="toast-text">Message copied!</span>
+    <!-- Toast Notification Banner -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-slate-700 text-xs sm:text-sm font-medium flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+        <span id="toast-message">Copied to clipboard!</span>
     </div>
 
-    <!-- JAVASCRIPT FOR INTERACTIVITY -->
+    <!-- Script Utilities -->
     <script>
-        // Mobile Navigation Menu Toggle
+        // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
 
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-            if (mobileMenu.classList.contains('hidden')) {
-                menuIcon.className = 'fa-solid fa-bars text-xl';
-            } else {
-                menuIcon.className = 'fa-solid fa-xmark text-xl';
-            }
+            menuIcon.classList.toggle('fa-bars');
+            menuIcon.classList.toggle('fa-xmark');
         });
 
-        // Close mobile menu when clicking menu items
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
+        // Close mobile menu on click
+        mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
-                menuIcon.className = 'fa-solid fa-bars text-xl';
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
             });
         });
 
-        // Copy to Clipboard Utility
-        function copyToClipboard(text, message) {
-            const tempInput = document.createElement('input');
-            tempInput.value = text;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-
-            showToast(message);
+        // Copy to clipboard utility
+        function copyToClipboard(text, customMessage) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(customMessage);
+            });
         }
 
-        // Show Toast Notification
-        function showToast(text) {
+        function showToast(msg) {
             const toast = document.getElementById('toast');
-            const toastText = document.getElementById('toast-text');
-            toastText.textContent = text;
-
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.textContent = msg;
             toast.classList.remove('translate-y-20', 'opacity-0');
-            toast.classList.add('translate-y-0', 'opacity-100');
-
             setTimeout(() => {
-                toast.classList.remove('translate-y-0', 'opacity-100');
                 toast.classList.add('translate-y-20', 'opacity-0');
             }, 3000);
         }
 
-        // Filterable Skills Grid Logic
-        function filterSkills(category) {
-            const buttons = document.querySelectorAll('.skill-filter-btn');
-            const cards = document.querySelectorAll('.skill-card');
-
-            buttons.forEach(btn => {
-                if (btn.getAttribute('data-filter') === category) {
-                    btn.classList.remove('bg-slate-100', 'text-slate-600');
-                    btn.classList.add('bg-slate-900', 'text-white', 'shadow-md');
-                } else {
-                    btn.classList.remove('bg-slate-900', 'text-white', 'shadow-md');
-                    btn.classList.add('bg-slate-100', 'text-slate-600');
-                }
-            });
-
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-
-        // Contact Form Demo Handler
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const formMsg = document.getElementById('form-message');
-            
-            formMsg.className = "mt-4 p-4 rounded-xl text-center text-sm font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30";
-            formMsg.textContent = "Thank you for reaching out! Merry Ann will respond to your inquiry shortly.";
-            formMsg.classList.remove('hidden');
-
-            document.getElementById('contact-form').reset();
-
-            setTimeout(() => {
-                formMsg.classList.add('hidden');
-            }, 5000);
+        // Form Submit Simulation
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            showToast('Message sent successfully! I will get back to you soon.');
+            e.target.reset();
         }
     </script>
 </body>
